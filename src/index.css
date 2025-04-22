@@ -1,0 +1,160 @@
+
+/* React DatePicker Custom Styles */
+.react-datepicker {
+  font-family: inherit;
+  background-color: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 0.5rem;
+}
+
+.react-datepicker__header {
+  background-color: #334155;
+  border-bottom: 1px solid #475569;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: #fff;
+}
+
+.react-datepicker__day:hover {
+  background-color: #475569;
+}
+
+.react-datepicker__day--selected {
+  background-color: #f59e0b !important;
+}
+
+.react-datepicker__day--disabled {
+  color: #64748b !important;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 0.5s ease-out;
+}
+
+.animate-fade-out {
+  animation: fade-out 0.5s ease-out;
+}
+
+.review-card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.review-card-shadow:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-4px);
+}
+
+:root {
+  --color-primary: 234 88 12; /* amber-600 */
+  --color-secondary: 51 65 85; /* slate-700 */
+  --color-accent: 217 70 0; /* amber-700 */
+  --color-success: 22 163 74; /* green-600 */
+  --color-warning: 202 138 4; /* yellow-600 */
+  --color-error: 220 38 38; /* red-600 */
+  --color-background: 15 23 42; /* slate-900 */
+  --color-text: 248 250 252; /* slate-50 */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: rgb(var(--color-text));
+  background-color: rgb(var(--color-background));
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(15 23 42);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(234 88 12 / 0.6);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(234 88 12);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+/* Custom classes */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+.car-card-shadow {
+  box-shadow: 0 10px 30px -15px rgba(234, 88, 12, 0.3);
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.95));
+}
+
+.image-fade-mask {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.spec-value {
+  @apply text-amber-500 font-semibold;
+}
