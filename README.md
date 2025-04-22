@@ -5,6 +5,8 @@
 
 **HyperCar Hub** è una moderna applicazione React per la visualizzazione e l'acquisto simulato di auto di lusso. Questo progetto full-stack è stato sviluppato per dimostrare l'implementazione di un e-commerce moderno con React, TypeScript e API personalizzate.
 
+Per visualizzare la demo del sito live, clicca [QUI](https://hyper-car-hub.vercel.app/).
+
 <p align="center">
   <img src="./public/cover_a.jpg" alt="Cover" width="100%" />
 </p>
@@ -19,6 +21,10 @@ Questo progetto dimostra l'implementazione di un'applicazione React moderna con 
 - **Framer Motion**: Animazioni fluide e interattive
 - **React Router**: Routing dichiarativo
 - **API Custom**: Backend dedicato per la gestione dei dati
+
+## 📸 Screenshot
+
+![Clone LinkedIn Screenshot](./public/screenshot.png)
 
 ---
 
@@ -123,6 +129,10 @@ Questo è un progetto dimostrativo. Le funzionalità di pagamento sono simulate 
 
 ## 👤 Autore
 Progetto creato da [Henry](https://github.com/henry8913)
+
+<p align="center">
+  <img src="./public/cover_c.jpg" alt="Cover" width="100%" />
+</p>
 
 ## 📝 Licenza
 Distribuito sotto la licenza [MIT](https://github.com/henry8913/HyperCar-Hub/blob/main/LICENSE.txt). Consulta il file LICENSE per maggiori dettagli.
